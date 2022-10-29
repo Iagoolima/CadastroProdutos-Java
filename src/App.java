@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class App {
     
    
-    //Metodo do menu 1
+    //Metodo 1
      public static String[] cadastrar(){
 
         Scanner entrada = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class App {
         return nome;
     }
      
-     //metodo do menu 2
+     //metodo 2
      public static int[] cadastrarQuantidade(String[] nome){
         Scanner entrada = new Scanner(System.in);
         int[] quantidade = new int[3];
@@ -44,7 +44,7 @@ public class App {
         return valor;
     }
      
-     //metodo do menu 4
+     //metodo 4
      public static void imprimir(String[] nome, int[] quantidade, double[] valor){
         for(int i = 0; i < nome.length; i++){
             System.out.println("produto "+(i+1)+"\nNome: " +nome[i]+"\nQuantidade: "+quantidade[i]+"\nValor Unitario: "+valor[i]);
